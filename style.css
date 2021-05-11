@@ -1,0 +1,77 @@
+
+body{background-image: linear-gradient(to right,#093028, #237A57); } 
+
+    h1{
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    } 
+
+    textarea#textInput{
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 15px;
+    } 
+
+    button#countButton{
+        border: transparent;
+        display: block;
+        width: 35vw;
+        max-width:250px;
+        margin: 0 auto;
+        border-radius: 5px;
+        height: 35px; 
+        font-size: 15px;
+        font-weight: bold;
+        background-color: grey;
+        color: white;
+    } 
+
+    #lettersDiv ,#wordsDiv{ 
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+        height: 25vh;
+        background-color:#fff;
+        margin: 10px;
+        padding: 5px;
+        overflow:scroll;
+    } 
+
+    #wordsDiv{height: 40vh;} 
+
+@media(min-width:768px)and (max-width:1023px) {  
+
+        h1{font-size: 30px; }
+
+        #lettersDiv ,#wordsDiv{ 
+        margin: 15px auto;
+        font-size: 20px;
+        }
+    } 
+
+@media(min-width:1024px){ 
+        h1{ font-size: 35px} 
+
+        #lettersDiv ,#wordsDiv{ 
+        margin: 15px auto;
+        font-size: 25px;
+        } 
+
+        #wordsDiv{height: 30vh;}
+
+    textarea#textInput{
+        width: 80vw;
+        padding: 15px; 
+        font-size: 20px;
+        } 
+    
+        #lettersDiv ,#wordsDiv{ 
+            display: block;
+            width: 80vw; 
+        } 
+
+    }
