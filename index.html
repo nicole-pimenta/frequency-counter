@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Frequency Counter</title>
 </head>
 <body> 
     <h1>Contador de Frequência</h1>
+    <h2>Insira texto abaixo:</h2>
     <textarea rows="15" cols="60" id="textInput"></textarea>
     <br/>  
-    <button id="countButton">Contador de Frequência</button> 
+    <button id="countButton"> <i class="far fa-arrow-alt-circle-right"></i>Clique aqui</button> 
 
-    
-    <div id="lettersDiv">Letters </div>
-    <div id="wordsDiv"> Words</div>
-
+    <div class="container">
+        <div id="lettersDiv">Letters </div>
+        <div id="wordsDiv"> Words</div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

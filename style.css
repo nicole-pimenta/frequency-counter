@@ -1,19 +1,28 @@
 
-body{background-image: linear-gradient(to right,#093028, #237A57); } 
+body{background-image: linear-gradient(to right,#093028, #237A57);
+} 
 
-    h1{
+    h1 ,h2{
     color:#fff;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
     } 
+
+    h2{
+        font-size: 18px;
+    }
 
     textarea#textInput{
     display: block;
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
     padding: 5px;
     font-size: 15px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+   
     } 
 
     button#countButton{
@@ -23,21 +32,32 @@ body{background-image: linear-gradient(to right,#093028, #237A57); }
         max-width:250px;
         margin: 0 auto;
         border-radius: 5px;
-        height: 35px; 
+        height: 45px; 
         font-size: 15px;
         font-weight: bold;
         background-color: grey;
         color: white;
+    }  
+
+    button#countButton:hover{
+        background-color: #fff;
+        color: black;
     } 
 
+    .far{
+     margin: 5px 5px;
+    }
+
     #lettersDiv ,#wordsDiv{ 
-        display: block;
-        width: 90vw;
-        margin: 0 auto;
+        margin: 10px auto;
+        width: 80vw;
+        justify-content: center;
         height: 25vh;
         background-color:#fff;
-        margin: 10px;
-        padding: 5px;
+        border-radius: 8px; 
+        border: 4px dashed  grey;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 15px;
         overflow:scroll;
     } 
 
@@ -56,6 +76,14 @@ body{background-image: linear-gradient(to right,#093028, #237A57); }
 @media(min-width:1024px){ 
         h1{ font-size: 35px} 
 
+        .container{
+            display: flex;
+            justify-content:space-around;
+            margin-top: 50px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
         #lettersDiv ,#wordsDiv{ 
         margin: 15px auto;
         font-size: 25px;
@@ -65,13 +93,16 @@ body{background-image: linear-gradient(to right,#093028, #237A57); }
 
     textarea#textInput{
         width: 80vw;
+        max-width: 1000px;
         padding: 15px; 
         font-size: 20px;
         } 
     
         #lettersDiv ,#wordsDiv{ 
-            display: block;
-            width: 80vw; 
+          
+            width: 42vw; 
+            max-width: 600px;
+            height: 40vh;
         } 
 
     }
